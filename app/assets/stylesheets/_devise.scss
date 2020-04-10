@@ -1,0 +1,21 @@
+.devise-container{
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hotpink;
+}
+.form-image{
+  background-image: image-url("umi.jpeg");
+  background-size: cover;
+  height: 700px;
+  width: 400px;
+  display: inline-block;
+}
+
+.form-box{
+  height: 700px;
+  width: 400px;
+  background-color:greenyellow;
+  display: inline-block;
+}

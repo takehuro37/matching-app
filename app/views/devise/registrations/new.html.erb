@@ -1,4 +1,4 @@
-<%# <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
     <a class="navbar-brand">新規登録</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,36 +8,39 @@
       </ul>
     </div>
   </div>
-</nav> %>
+</nav>
+<div class="devise-container">
+  <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+    <div class ="form-image"></div>
+    <div class="form-box">
+      <%= devise_error_messages! %>
+        <div class="form-group">
+          <%= f.label :nickname %><br/>
+          <%= f.text_field :nickname %>
+        </div>
 
-<%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-  <%= devise_error_messages! %>
-  <div class="devise_container">
-    <div class="form-group">
-      <%= f.label :nickname %><br/>
-      <%= f.text_field :nickname %>
-    </div>
+        <div class="form-group">
+          <%= f.label :email %><br />
+          <%= f.email_field :email %>
+        </div>
 
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email %>
-    </div>
+        <div class="form-group">
+          <%= f.label :password %>
+          <% if @validatable %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
 
-    <div class="field">
-      <%= f.label :password %>
-      <% if @validatable %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-    </div>
+        <div class="form-group">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        </div>
 
-    <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        <div class="form-group">
+          <%= f.submit "Sign up" %>
+        </div>
+      </div>
     </div>
-
-    <div class="actions">
-      <%= f.submit "Sign up" %>
-    </div>
-  </div>
-<% end %>
+  <% end %>
+</div>

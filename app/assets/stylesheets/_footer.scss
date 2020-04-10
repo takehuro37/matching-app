@@ -1,0 +1,32 @@
+footer{
+  height: 110px;
+  background-color: rgb(216, 237, 250);
+}
+
+.footer-nav{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav__content {
+  margin: 25px 20px 0px 20px;
+  color: rgb(88, 88, 88);
+  font-size: 0.9em;
+}
+
+.footer-nav__content:hover {
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
+
+.line {
+  margin-top: 25px;
+  color: rgb(88, 88, 88);
+  font-size: 0.9em;
+}
+
+.footer-text{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

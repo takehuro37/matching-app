@@ -1,0 +1,74 @@
+.header-box {
+  border-top: 20px solid rgba(97, 213, 248, 0.815);
+  border-bottom: 1px solid rgb(211, 211, 211);
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  margin:3px 0 0 60px;
+  height: 90%;
+  width: 150px;
+}
+
+.header-search {
+  width: 55%;
+  align-items: center;
+  display: flex;
+  margin-left: 90px;
+}
+
+.header-input{
+  height: 40px;
+  width: 90%;
+}
+
+.header-submit{
+  background-image: image-url("search-btn.png");
+  background-size: cover;
+  margin-left: 10px;
+  height: 40px;
+  width: 50px;
+  display: block;
+}
+
+.header-info{
+  margin: 15px 80px 0 0px;
+  width: 200PX;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.header-info-link{
+  font-family: Osaka-mono;
+  background-color: rgb(246, 250, 252);
+  border: 1px solid rgba(97, 213, 248, 0.815);
+  padding: 6px 10px 10px 10px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+.header-info-link:hover{
+  color: rgb(146, 221, 240);
+  text-decoration: none; 
+}
+
+.header-nav {
+  height: 30px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content:space-around ;
+}
+
+.header-nav__content {
+  color: rgb(88, 88, 88);
+  font-size: 0.9em;
+}
+.header-nav__content:hover {
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
