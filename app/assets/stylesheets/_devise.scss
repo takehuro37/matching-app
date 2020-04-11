@@ -1,21 +1,50 @@
-.devise-container{
-  height: 900px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: hotpink;
+input{
+  width: 450px;
+  height: 45px;
 }
-.form-image{
-  background-image: image-url("umi.jpeg");
-  background-size: cover;
-  height: 700px;
-  width: 400px;
-  display: inline-block;
+
+.devise-header{
+  border-top: 20px solid rgba(97, 213, 248, 0.815);
+  height: 85px;
+}
+
+.devise-container{
+  width: 600px;
+  margin: 0px auto 50px auto;
+  justify-content: center;
+}
+
+.devise-title{
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 0px 40% 10px 40%;
 }
 
 .form-box{
-  height: 700px;
+  border: 2px solid rgba(215, 240, 248, 0.815);
+}
+
+.form-group{
+  margin: 40px 75px;
+}
+
+.form-btn{
+  margin: 40px 60px 30px 95px;
   width: 400px;
-  background-color:greenyellow;
-  display: inline-block;
+  font-weight: 600;
+  background-color: rgb(11, 171, 219);
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.form-btn:hover{
+  background-color: rgb(136, 209, 231);
+}
+
+.password-reset{
+  margin: 0 0 40px 170px;
+}
+
+.devise-space{
+  height: 160px;
 }
