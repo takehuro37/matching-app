@@ -42,8 +42,8 @@
 
 .header-info-link{
   font-family: Osaka-mono;
-  background-color: rgb(246, 250, 252);
-  border: 1px solid rgba(35, 189, 236, 0.815);
+  color: rgba(15, 195, 240, 0.945);
+  border: 1.5px solid rgba(15, 195, 240, 0.945);
   padding: 6px 10px 10px 10px;
   height: 35px;
   cursor: pointer;
@@ -52,7 +52,8 @@
 }
 
 .header-info-link:hover{
-  color: rgb(146, 221, 240);
+  color: rgb(99, 216, 245);
+  background-color: rgba(141, 196, 248, 0.178);
   text-decoration: none; 
 }
 
@@ -71,4 +72,9 @@
 .header-nav__content:hover {
   color: rgb(190, 190, 190);
   text-decoration: none;
+}
+
+.simple-header{
+  border-top: 20px solid rgba(97, 213, 248, 0.815);
+  height: 85px;
 }

@@ -1,1 +1,35 @@
-<%= link_to "テスト",new_user_path%> 
+<%= render "shared/simple-header"%>
+
+<div class="profile-container">
+  <div class="profile__main-box">
+    <div class="nickname-box">
+      <h5>ニックネーム</h5>
+    </div>
+    <div class="back-image">
+      <img src="https://source.unsplash.com/user/erondu/", class="back-image">
+    </div>
+    <div class="profile-edit" >
+      <div class="profile-image"></div>
+      <%= link_to "Edit Profile","#", class:"profile-edit__btn"%>
+    </div>
+    <div class="profile-text">
+      <h6>プロフィール</h6>
+    </div>
+    <div class="profile-status">
+      <h6>趣味</h6><br><br>
+      <h6>技能</h6><br><br>
+      <h6>誕生日</h6><br><br>
+    </div>
+  </div>
+  <div class="profile__side-box">
+    <div class="profile-post__title">
+      <h5>投稿記事一覧</h5>
+    </div>
+    <div class="porfile-post__content"></div>
+    <div class="porfile-post__content"></div>
+    <div class="porfile-post__content"></div>
+    <div class="porfile-post__content"></div>
+  </div>
+</div>
+<%= render "shared/postbtn"%>
+<%= render "shared/footer"%>
