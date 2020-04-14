@@ -1,24 +1,3 @@
-# README
+<img width="1390" alt="demo" src="https://user-images.githubusercontent.com/60645490/79238447-5a22ed80-7eaa-11ea-84e0-e210d2fd157c.png">
+<h2 align="center">Home Home</h2><p>在宅専門マッチングアプリ</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
