@@ -25,7 +25,7 @@
 }
 
 .header-submit{
-  background-image: image-url("search-btn.png");
+  background-image: image-url("search.png");
   background-size: cover;
   margin-left: 10px;
   height: 40px;
@@ -58,7 +58,8 @@
 }
 
 .header-nav {
-  height: 30px;
+  background-color:  rgba(182, 224, 236, 0.301);
+  height: 25px;
   width: 90%;
   margin-left: 5%;
   display: flex;
